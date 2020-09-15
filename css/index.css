@@ -1,42 +1,86 @@
-* {
-    margin: 1px;
-    padding: 1px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-b {
-    color: black;
-    font-family: Impact;
+body {
+    max-width: 980px;
+    margin:auto;
 }
 
 #chosen {
-    font-size: 30px;
+    justify-content: space-around;
+    font-size: 3.5rem;
 }
 
-#top {
-    overflow: hidden;
-    float: right;
+.header-nav .logo {
+    font-size: 3.5rem;
+    text-align: center;
 }
 
-b a {
+.header-nav .menu-items {
+    justify-content: space-around;
+    flex: 1;
+    display: none;
+}
+
+.header-nav .menu-items a {
+    display: block;
     text-decoration: none;
+    text-transform: uppercase;
     color: black;
+    padding: 5px;
+    border: 1px solid transparent;
 }
 
-nav {
-    overflow: hidden;
-    float: right;
+.header-nav .menu-items a:hover {
+    border: 1px solid black;
 }
 
-nav li {
-    float: left;
-    list-style: none;
+/* Burger menu */
+.burger-icon {
+    font-size: 2rem;
 }
 
-nav li a {
-	font-size: 22px;
-	font-family: Impact;
-	text-decoration: none;
-	padding: 0 30px;
-	color: black;
-	text-shadow: 0 1px 0 white;
+.burger-icon:hover {
+    cursor: pointer;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+.header-nav input:checked ~ .menu-items {
+    display: block;
+}
+
+@media (min-width: 769px) {
+
+    .burger-icon {
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    #burger-checkbox ~ .menu-items {
+        display: flex;
+    }
+
+}
+
+.header-banner {
+    background-image: url(../img/nikeandadidas.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-banner h1 {
+    font-size: 3.5rem;
+    color: black;
+    font-family: 'Indie Flower', cursive;
 }
