@@ -4,34 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popular Shoes</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <div id="chosen">Join</div>
-        <div id="chosen"><img src="img/adidas.png" alt="Adidas Item"></div>
-        <div id="chosen"><img src="img/nike.png" alt="Nike Item"></div>
-        <div class="top-right"><img src="img/bag.png" alt="Bag Item"></div>
-        <div class="top-right"><img src="img/location.png" alt="Location Item"></div>
-        <div class="top-right">Ukraine</div>
+        <div class="header_inner">
+            <div id="text-left">Join</div>
+            <div class="top_left"><img src="img/adidas.png" alt="Adidas Item"></div>
+            <div class="top_left"><img src="img/nike.png" alt="Nike Item"></div>
+            <div class="top-right"><img src="img/bag.png" alt="Bag Item"></div>
+            <div class="top-right"><img src="img/location.png" alt="Location Item"></div>
+            <div id="text-right">Ukraine</div>
+        </div>
         <nav class="header-nav">
             <div class="logo"><img src="img/shues.png" alt="Name"></div>
             <label class="burger-icon" for="burger-checkbox">☰</label>
             <input type="checkbox" id="burger-checkbox">
                 <div class="menu-items">
-                    <a href="#">New Collection</a>
-                    <a href="#products">Man</a>
-                    <a href="#contacts">Woman</a>
-                    <a href="#">Kids</a>
-                    <a href="#">Sale</a>
+                    <a href="#new-collection">New Collection</a>
+                    <a href="#man">Man</a>
+                    <a href="#woman">Woman</a>
+                    <a href="#kids">Kids</a>
+                    <a href="#sale">Sale</a>
                 </div>
         </nav>
 		<div class="header-banner">
 			<h1>Popular Shoes</h1>
-			<button class="button">Shop</button>
+			<button class="btn button-shop">Shop</button>
 		</div>
 	</header>
-			
-    
+	<section>
+		<h2 id="new-collection">New Collection</h2>
+		<div class="product-list">
+			<article class="product-card">
+			</article>
+		</div>
+        <h2 id="man">Man</h2>
+		<div class="product-list">
+			<article class="product-card">
+			</article>
+		</div>
+        <h2 id="woman">Woman</h2>
+		<div class="product-list">
+			<article class="product-card">
+			</article>
+		</div>
+        <h2 id="kids">Kids</h2>
+		<div class="product-list">
+			<article class="product-card">
+			</article>
+		</div>
+        <h2 id="sale">Sale</h2>
+		<div class="product-list">
+			<article class="product-card">
+			</article>
+		</div>	
+	</section>
+    <footer>
+        <h2 id="end">Contact us</h2>
+    </footer>		
 </body>
 </html>

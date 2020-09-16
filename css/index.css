@@ -1,17 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 body {
     max-width: 980px;
     margin:auto;
 }
 
-#chosen {
-    justify-content: space-around;
-    font-size: 3.5rem;
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header_inner .top-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.header .header_inner .top-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 2px;
+}
+#text-left {
+    font-family:  'Permanent Marker', cursive;
+}
+
+#text-right {
+    font-family:  'Permanent Marker', cursive;
 }
 
 .header-nav .logo {
-    font-size: 3.5rem;
     text-align: center;
 }
 
@@ -28,6 +52,7 @@ body {
     color: black;
     padding: 5px;
     border: 1px solid transparent;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .header-nav .menu-items a:hover {
@@ -80,7 +105,102 @@ body {
 }
 
 .header-banner h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: black;
     font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.button-shop {
+  box-shadow: inset 0 0 0 4px black;
+  color: black;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.button-shop::before, .button-shop::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.button-shop::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.button-shop::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.button-shop:hover {
+  color: white;
+}
+.button-shop:hover::before, .button-shop:hover::after {
+  border-color: white;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.button-shop:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+.button-shop:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  outline: 2px dotted black;
+}
+
+#new-collection {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+}
+
+#man {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+}
+
+#woman {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+}
+
+#kids {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+}
+
+#sale {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+}
+
+#end {
+    text-align: start;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
 }
