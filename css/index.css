@@ -294,3 +294,8 @@ body {
 .button:focus {
   outline: 2px dotted black;
 }
+
+.soc-icon img {
+    width: 34px;
+    padding: 3px;
+}
